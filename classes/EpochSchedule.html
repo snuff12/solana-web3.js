@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>EpochSchedule | @solana/web3.js</title><meta name="description" content="Documentation for @solana/web3.js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>EpochSchedule | @solana/web3.js</title><meta name="description" content="Documentation for @solana/web3.js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><script async src="../assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@solana/web3.js</a>
 <div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
 <ul role="listbox" id="tsd-search-results"></ul>
@@ -16,7 +16,7 @@
 Can be retrieved with the <a href="Connection.html#getepochschedule" class="tsd-kind-method">Connection.getEpochSchedule</a> method</p>
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L31">packages/web3.js/src/epoch-schedule.ts:31</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L31">src/epoch-schedule.ts:31</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -49,57 +49,57 @@ Can be retrieved with the <a href="Connection.html#getepochschedule" class="tsd-
 <h3 class="tsd-anchor-link" id="constructor"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
-<div class="tsd-signature tsd-anchor-link" id="constructorepochschedule"><span class="tsd-signature-keyword">new</span> <span class="tsd-kind-constructor-signature">EpochSchedule</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">slotsPerEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">leaderScheduleSlotOffset</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">warmup</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">firstNormalEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">firstNormalSlot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type tsd-kind-class">EpochSchedule</a><a href="#constructorepochschedule" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-signature tsd-anchor-link" id="constructorepochschedule"><span class="tsd-signature-keyword">new</span> <span class="tsd-kind-constructor-signature">EpochSchedule</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">slotsPerEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">leaderScheduleSlotOffset</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">warmup</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">firstNormalEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">firstNormalSlot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type tsd-kind-class">EpochSchedule</a><a href="#constructorepochschedule" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">slotsPerEpoch</span>: <span class="tsd-signature-type">bigint</span></span></li>
-<li><span><span class="tsd-kind-parameter">leaderScheduleSlotOffset</span>: <span class="tsd-signature-type">bigint</span></span></li>
+<li><span><span class="tsd-kind-parameter">slotsPerEpoch</span>: <span class="tsd-signature-type">number</span></span></li>
+<li><span><span class="tsd-kind-parameter">leaderScheduleSlotOffset</span>: <span class="tsd-signature-type">number</span></span></li>
 <li><span><span class="tsd-kind-parameter">warmup</span>: <span class="tsd-signature-type">boolean</span></span></li>
-<li><span><span class="tsd-kind-parameter">firstNormalEpoch</span>: <span class="tsd-signature-type">bigint</span></span></li>
-<li><span><span class="tsd-kind-parameter">firstNormalSlot</span>: <span class="tsd-signature-type">bigint</span></span></li></ul></div>
+<li><span><span class="tsd-kind-parameter">firstNormalEpoch</span>: <span class="tsd-signature-type">number</span></span></li>
+<li><span><span class="tsd-kind-parameter">firstNormalSlot</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">EpochSchedule</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L43">packages/web3.js/src/epoch-schedule.ts:43</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L43">src/epoch-schedule.ts:43</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="firstnormalepoch"><span>first<wbr/>Normal<wbr/>Epoch</span><a href="#firstnormalepoch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">firstNormalEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">firstNormalEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The first epoch with <code>slotsPerEpoch</code> slots</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L39">packages/web3.js/src/epoch-schedule.ts:39</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L39">src/epoch-schedule.ts:39</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="firstnormalslot"><span>first<wbr/>Normal<wbr/>Slot</span><a href="#firstnormalslot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">firstNormalSlot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">firstNormalSlot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The first slot of <code>firstNormalEpoch</code></p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L41">packages/web3.js/src/epoch-schedule.ts:41</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L41">src/epoch-schedule.ts:41</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="leaderscheduleslotoffset"><span>leader<wbr/>Schedule<wbr/>Slot<wbr/>Offset</span><a href="#leaderscheduleslotoffset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">leaderScheduleSlotOffset</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">leaderScheduleSlotOffset</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The number of slots before beginning of an epoch to calculate a leader schedule for that epoch</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L35">packages/web3.js/src/epoch-schedule.ts:35</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L35">src/epoch-schedule.ts:35</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="slotsperepoch"><span>slots<wbr/>Per<wbr/>Epoch</span><a href="#slotsperepoch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">slotsPerEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">slotsPerEpoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The maximum number of slots in each epoch</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L33">packages/web3.js/src/epoch-schedule.ts:33</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L33">src/epoch-schedule.ts:33</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="warmup"><span>warmup</span><a href="#warmup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">warmup</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 <div class="tsd-comment tsd-typography"><p>Indicates whether epochs start short and grow</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L37">packages/web3.js/src/epoch-schedule.ts:37</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L37">src/epoch-schedule.ts:37</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -107,67 +107,67 @@ Can be retrieved with the <a href="Connection.html#getepochschedule" class="tsd-
 <h3 class="tsd-anchor-link" id="getepoch"><span>get<wbr/>Epoch</span><a href="#getepoch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
-<div class="tsd-signature tsd-anchor-link" id="getepoch-1"><span class="tsd-kind-call-signature">getEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">slot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><a href="#getepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-signature tsd-anchor-link" id="getepoch-1"><span class="tsd-kind-call-signature">getEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">slot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#getepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">slot</span>: <span class="tsd-signature-type">bigint</span></span></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><aside class="tsd-sources">
+<li><span><span class="tsd-kind-parameter">slot</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L57">packages/web3.js/src/epoch-schedule.ts:57</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L57">src/epoch-schedule.ts:57</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="getepochandslotindex"><span>get<wbr/>Epoch<wbr/>And<wbr/>Slot<wbr/>Index</span><a href="#getepochandslotindex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
-<div class="tsd-signature tsd-anchor-link" id="getepochandslotindex-1"><span class="tsd-kind-call-signature">getEpochAndSlotIndex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">slot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">]</span><a href="#getepochandslotindex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-signature tsd-anchor-link" id="getepochandslotindex-1"><span class="tsd-kind-call-signature">getEpochAndSlotIndex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">slot</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><a href="#getepochandslotindex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">slot</span>: <span class="tsd-signature-type">bigint</span></span></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">]</span></h4><aside class="tsd-sources">
+<li><span><span class="tsd-kind-parameter">slot</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L61">packages/web3.js/src/epoch-schedule.ts:61</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L61">src/epoch-schedule.ts:61</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="getfirstslotinepoch"><span>get<wbr/>First<wbr/>Slot<wbr/>In<wbr/>Epoch</span><a href="#getfirstslotinepoch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
-<div class="tsd-signature tsd-anchor-link" id="getfirstslotinepoch-1"><span class="tsd-kind-call-signature">getFirstSlotInEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">epoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><a href="#getfirstslotinepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-signature tsd-anchor-link" id="getfirstslotinepoch-1"><span class="tsd-kind-call-signature">getFirstSlotInEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">epoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#getfirstslotinepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">epoch</span>: <span class="tsd-signature-type">bigint</span></span></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><aside class="tsd-sources">
+<li><span><span class="tsd-kind-parameter">epoch</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L80">packages/web3.js/src/epoch-schedule.ts:80</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L80">src/epoch-schedule.ts:80</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="getlastslotinepoch"><span>get<wbr/>Last<wbr/>Slot<wbr/>In<wbr/>Epoch</span><a href="#getlastslotinepoch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
-<div class="tsd-signature tsd-anchor-link" id="getlastslotinepoch-1"><span class="tsd-kind-call-signature">getLastSlotInEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">epoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><a href="#getlastslotinepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-signature tsd-anchor-link" id="getlastslotinepoch-1"><span class="tsd-kind-call-signature">getLastSlotInEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">epoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#getlastslotinepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">epoch</span>: <span class="tsd-signature-type">bigint</span></span></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><aside class="tsd-sources">
+<li><span><span class="tsd-kind-parameter">epoch</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L91">packages/web3.js/src/epoch-schedule.ts:91</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L91">src/epoch-schedule.ts:91</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="getslotsinepoch"><span>get<wbr/>Slots<wbr/>In<wbr/>Epoch</span><a href="#getslotsinepoch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
-<div class="tsd-signature tsd-anchor-link" id="getslotsinepoch-1"><span class="tsd-kind-call-signature">getSlotsInEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">epoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><a href="#getslotsinepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-signature tsd-anchor-link" id="getslotsinepoch-1"><span class="tsd-kind-call-signature">getSlotsInEpoch</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">epoch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#getslotsinepoch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">epoch</span>: <span class="tsd-signature-type">bigint</span></span></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><aside class="tsd-sources">
+<li><span><span class="tsd-kind-parameter">epoch</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/epoch-schedule.ts#L95">packages/web3.js/src/epoch-schedule.ts:95</a></li></ul></aside></div></li></ul></section></section></details></div>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/epoch-schedule.ts#L95">src/epoch-schedule.ts:95</a></li></ul></aside></div></li></ul></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">

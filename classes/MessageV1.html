@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>MessageV1 | @solana/web3.js</title><meta name="description" content="Documentation for @solana/web3.js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>MessageV1 | @solana/web3.js</title><meta name="description" content="Documentation for @solana/web3.js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><script async src="../assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@solana/web3.js</a>
 <div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
 <ul role="listbox" id="tsd-search-results"></ul>
@@ -9,23 +9,9 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb" aria-label="Breadcrumb">
 <li><a href="" aria-current="page">MessageV1</a></li></ul>
-<h1>Class MessageV1</h1></div>
-<section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>A v1 transaction message (SIMD-0385).</p>
-<p>Compared to v0, a v1 message:</p>
+<h1>Class MessageV1</h1></div><aside class="tsd-sources">
 <ul>
-<li>carries resource limits and prioritization in a message-level
-<a href="../types/V1TransactionConfig.html" class="tsd-kind-type-alias">V1TransactionConfig</a> instead of Compute Budget program instructions
-(which are no-ops inside a v1 transaction),</li>
-<li>does not support address lookup tables,</li>
-<li>may be up to 4096 bytes when serialized as a transaction (vs. 1232), and</li>
-<li>uses a message-first wire envelope when framed as a transaction.</li>
-</ul>
-<p>Fetching v1 transactions over RPC requires passing
-<code>maxSupportedTransactionVersion: 1</code> to <code>getTransaction</code>/<code>getBlock</code>.</p>
-</div></section><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L166">packages/web3.js/src/message/v1.ts:166</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L75">src/message/v1.ts:75</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -41,11 +27,12 @@
 <a href="#header" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>header</span></a>
 <a href="#recentblockhash" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>recent<wbr/>Blockhash</span></a>
 <a href="#staticaccountkeys" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>static<wbr/>Account<wbr/>Keys</span></a>
-<a href="#transactionconfig" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>transaction<wbr/>Config?</span></a>
+<a href="#transactionconfig" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>transaction<wbr/>Config</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading tsd-anchor-link" id="accessors">Accessors<a href="#accessors" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-index-list"><a href="#version" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../assets/icons.svg#icon-262144"></use></svg><span>version</span></a>
+<div class="tsd-index-list"><a href="#addresstablelookups" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../assets/icons.svg#icon-262144"></use></svg><span>address<wbr/>Table<wbr/>Lookups</span></a>
+<a href="#version" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../assets/icons.svg#icon-262144"></use></svg><span>version</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading tsd-anchor-link" id="methods">Methods<a href="#methods" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
@@ -53,7 +40,6 @@
 <a href="#isaccountsigner" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>is<wbr/>Account<wbr/>Signer</span></a>
 <a href="#isaccountwritable" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>is<wbr/>Account<wbr/>Writable</span></a>
 <a href="#serialize" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>serialize</span></a>
-<a href="#compile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>compile</span></a>
 <a href="#deserialize" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>deserialize</span></a>
 </div></section></div></details></section></section>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Constructors"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -71,7 +57,7 @@
 <li><span><span class="tsd-kind-parameter">args</span>: <a href="../types/MessageV1Args.html" class="tsd-signature-type tsd-kind-type-alias">MessageV1Args</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">MessageV1</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L174">packages/web3.js/src/message/v1.ts:174</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L82">src/message/v1.ts:82</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -79,32 +65,39 @@
 <h3 class="tsd-anchor-link" id="compiledinstructions"><span>compiled<wbr/>Instructions</span><a href="#compiledinstructions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">compiledInstructions</span><span class="tsd-signature-symbol">:</span> <a href="../types/MessageCompiledInstruction.html" class="tsd-signature-type tsd-kind-type-alias">MessageCompiledInstruction</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L170">packages/web3.js/src/message/v1.ts:170</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L79">src/message/v1.ts:79</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="header"><code class="tsd-tag">Readonly</code><span>header</span><a href="#header" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">header</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/MessageHeader.html" class="tsd-signature-type tsd-kind-type-alias">MessageHeader</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
+<h3 class="tsd-anchor-link" id="header"><span>header</span><a href="#header" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">header</span><span class="tsd-signature-symbol">:</span> <a href="../types/MessageHeader.html" class="tsd-signature-type tsd-kind-type-alias">MessageHeader</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L167">packages/web3.js/src/message/v1.ts:167</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L76">src/message/v1.ts:76</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="recentblockhash"><span>recent<wbr/>Blockhash</span><a href="#recentblockhash" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">recentBlockhash</span><span class="tsd-signature-symbol">:</span> <a href="../types/Blockhash.html" class="tsd-signature-type tsd-kind-type-alias">Blockhash</a></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">recentBlockhash</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L169">packages/web3.js/src/message/v1.ts:169</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L78">src/message/v1.ts:78</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="staticaccountkeys"><span>static<wbr/>Account<wbr/>Keys</span><a href="#staticaccountkeys" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">staticAccountKeys</span><span class="tsd-signature-symbol">:</span> <a href="PublicKey.html" class="tsd-signature-type tsd-kind-class">PublicKey</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L168">packages/web3.js/src/message/v1.ts:168</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L77">src/message/v1.ts:77</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="transactionconfig"><code class="tsd-tag">Optional</code><span>transaction<wbr/>Config</span><a href="#transactionconfig" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">transactionConfig</span><span class="tsd-signature-symbol">?:</span> <a href="../types/V1TransactionConfig.html" class="tsd-signature-type tsd-kind-type-alias">V1TransactionConfig</a></div>
-<div class="tsd-comment tsd-typography"><p>Message-level resource limits and prioritization; <code>undefined</code> when no config values are set</p>
-</div><aside class="tsd-sources">
+<h3 class="tsd-anchor-link" id="transactionconfig"><span>transaction<wbr/>Config</span><a href="#transactionconfig" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">transactionConfig</span><span class="tsd-signature-symbol">:</span> <a href="../types/TransactionConfig.html" class="tsd-signature-type tsd-kind-type-alias">TransactionConfig</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L172">packages/web3.js/src/message/v1.ts:172</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L80">src/message/v1.ts:80</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Accessors"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="accessors-1">Accessors<a href="#accessors-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="addresstablelookups"><span>address<wbr/>Table<wbr/>Lookups</span><a href="#addresstablelookups" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li>
+<div class="tsd-signature" id="addresstablelookupsaddresstablelookups"><span class="tsd-signature-keyword">get</span> <span class="tsd-kind-get-signature">addressTableLookups</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="../types/MessageAddressTableLookup.html" class="tsd-signature-type tsd-kind-type-alias">MessageAddressTableLookup</a><span class="tsd-signature-symbol">[]</span></div>
+<div class="tsd-description">
+<h4 class="tsd-returns-title">Returns <a href="../types/MessageAddressTableLookup.html" class="tsd-signature-type tsd-kind-type-alias">MessageAddressTableLookup</a><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L99">src/message/v1.ts:99</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="version"><span>version</span><a href="#version" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -113,7 +106,7 @@
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">1</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L182">packages/web3.js/src/message/v1.ts:182</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L95">src/message/v1.ts:95</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -125,7 +118,7 @@
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="MessageAccountKeys.html" class="tsd-signature-type tsd-kind-class">MessageAccountKeys</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L186">packages/web3.js/src/message/v1.ts:186</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L103">src/message/v1.ts:103</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="isaccountsigner"><span>is<wbr/>Account<wbr/>Signer</span><a href="#isaccountsigner" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -138,7 +131,7 @@
 <li><span><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L190">packages/web3.js/src/message/v1.ts:190</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L107">src/message/v1.ts:107</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="isaccountwritable"><span>is<wbr/>Account<wbr/>Writable</span><a href="#isaccountwritable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -151,7 +144,7 @@
 <li><span><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L194">packages/web3.js/src/message/v1.ts:194</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L111">src/message/v1.ts:111</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="serialize"><span>serialize</span><a href="#serialize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -160,20 +153,7 @@
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L233">packages/web3.js/src/message/v1.ts:233</a></li></ul></aside></div></li></ul></section>
-<section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="compile"><code class="tsd-tag">Static</code><span>compile</span><a href="#compile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="">
-<div class="tsd-signature tsd-anchor-link" id="compile-1"><span class="tsd-kind-call-signature">compile</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <a href="../types/CompileV1Args.html" class="tsd-signature-type tsd-kind-type-alias">CompileV1Args</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type tsd-kind-class">MessageV1</a><a href="#compile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
-<div class="tsd-description">
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">args</span>: <a href="../types/CompileV1Args.html" class="tsd-signature-type tsd-kind-type-alias">CompileV1Args</a></span></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">MessageV1</a></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L208">packages/web3.js/src/message/v1.ts:208</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L129">src/message/v1.ts:129</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="deserialize"><code class="tsd-tag">Static</code><span>deserialize</span><a href="#deserialize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -186,7 +166,7 @@
 <li><span><span class="tsd-kind-parameter">serializedMessage</span>: <span class="tsd-signature-type">Uint8Array</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">MessageV1</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/f120283425242f4647a1a25496706239002b6f1f/packages/web3.js/src/message/v1.ts#L298">packages/web3.js/src/message/v1.ts:298</a></li></ul></aside></div></li></ul></section></section></details></div>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/98dd123c392a6ed49c6aaa3a6c817705d939a99d/src/message/v1.ts#L135">src/message/v1.ts:135</a></li></ul></aside></div></li></ul></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -207,9 +187,9 @@
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary>
 <div><a href="#compiledinstructions"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>compiled<wbr/>Instructions</span></a><a href="#header"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>header</span></a><a href="#recentblockhash"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>recent<wbr/>Blockhash</span></a><a href="#staticaccountkeys"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>static<wbr/>Account<wbr/>Keys</span></a><a href="#transactionconfig"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>transaction<wbr/>Config</span></a></div></details>
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Accessors"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Accessors</summary>
-<div><a href="#version"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../assets/icons.svg#icon-262144"></use></svg><span>version</span></a></div></details>
+<div><a href="#addresstablelookups"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../assets/icons.svg#icon-262144"></use></svg><span>address<wbr/>Table<wbr/>Lookups</span></a><a href="#version"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Accessor"><use href="../assets/icons.svg#icon-262144"></use></svg><span>version</span></a></div></details>
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Methods</summary>
-<div><a href="#getaccountkeys"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Account<wbr/>Keys</span></a><a href="#isaccountsigner"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>is<wbr/>Account<wbr/>Signer</span></a><a href="#isaccountwritable"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>is<wbr/>Account<wbr/>Writable</span></a><a href="#serialize"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>serialize</span></a><a href="#compile"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>compile</span></a><a href="#deserialize"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>deserialize</span></a></div></details></div></details></div>
+<div><a href="#getaccountkeys"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Account<wbr/>Keys</span></a><a href="#isaccountsigner"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>is<wbr/>Account<wbr/>Signer</span></a><a href="#isaccountwritable"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>is<wbr/>Account<wbr/>Writable</span></a><a href="#serialize"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>serialize</span></a><a href="#deserialize"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>deserialize</span></a></div></details></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html">@solana/web3.js</a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container">

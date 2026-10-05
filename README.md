@@ -24,17 +24,17 @@ Use this to interact with accounts and programs on the Solana network through th
 ### For use in Node.js or a web application
 
 ```
-$ npm install --save @solana/web3.js
+$ npm install --save @solana/web3.js@1
 ```
 
 ### For use in a browser, without a build system
 
 ```html
 <!-- Development (un-minified) -->
-<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+<script src="https://unpkg.com/@solana/web3.js@1/lib/index.iife.js"></script>
 
 <!-- Production (minified) -->
-<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+<script src="https://unpkg.com/@solana/web3.js@1/lib/index.iife.min.js"></script>
 ```
 
 ## Documentation and examples

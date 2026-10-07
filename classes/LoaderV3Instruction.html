@@ -1,0 +1,195 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>LoaderV3Instruction | @solana/web3.js</title><meta name="description" content="Documentation for @solana/web3.js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@solana/web3.js</a>
+<div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
+<ul role="listbox" id="tsd-search-results"></ul>
+<div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+<div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb" aria-label="Breadcrumb">
+<li><a href="" aria-current="page">LoaderV3Instruction</a></li></ul>
+<h1>Class LoaderV3Instruction</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>Loader V3 Instruction class</p>
+</div></section><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L189">packages/web3.js/src/programs/loader-v3.ts:189</a></li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h5 class="tsd-index-heading uppercase">Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading tsd-anchor-link" id="methods">Methods<a href="#methods" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-index-list"><a href="#decodeclose" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Close</span></a>
+<a href="#decodedeploywithmaxdatalen" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Deploy<wbr/>With<wbr/>Max<wbr/>Data<wbr/>Len</span></a>
+<a href="#decodeextendprogram" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Extend<wbr/>Program</span></a>
+<a href="#decodeinitializebuffer" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Initialize<wbr/>Buffer</span></a>
+<a href="#decodeinstructiontype" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Instruction<wbr/>Type</span></a>
+<a href="#decodesetauthority" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Set<wbr/>Authority</span></a>
+<a href="#decodesetauthoritychecked" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Set<wbr/>Authority<wbr/>Checked</span></a>
+<a href="#decodeupgrade" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Upgrade</span></a>
+<a href="#decodewrite" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Write</span></a>
+</div></section></div></details></section></section>
+<details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
+<section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodeclose"><code class="tsd-tag">Static</code><span>decode<wbr/>Close</span><a href="#decodeclose" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodeclose-1"><span class="tsd-kind-call-signature">decodeClose</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/CloseParams.html" class="tsd-signature-type tsd-kind-type-alias">CloseParams</a><a href="#decodeclose-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode a close instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/CloseParams.html" class="tsd-signature-type tsd-kind-type-alias">CloseParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L367">packages/web3.js/src/programs/loader-v3.ts:367</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodedeploywithmaxdatalen"><code class="tsd-tag">Static</code><span>decode<wbr/>Deploy<wbr/>With<wbr/>Max<wbr/>Data<wbr/>Len</span><a href="#decodedeploywithmaxdatalen" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodedeploywithmaxdatalen-1"><span class="tsd-kind-call-signature">decodeDeployWithMaxDataLen</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/DeployWithMaxDataLenParams.html" class="tsd-signature-type tsd-kind-type-alias">DeployWithMaxDataLenParams</a><a href="#decodedeploywithmaxdatalen-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode a deploy with max data len instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/DeployWithMaxDataLenParams.html" class="tsd-signature-type tsd-kind-type-alias">DeployWithMaxDataLenParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L249">packages/web3.js/src/programs/loader-v3.ts:249</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodeextendprogram"><code class="tsd-tag">Static</code><span>decode<wbr/>Extend<wbr/>Program</span><a href="#decodeextendprogram" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodeextendprogram-1"><span class="tsd-kind-call-signature">decodeExtendProgram</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/ExtendProgramParams.html" class="tsd-signature-type tsd-kind-type-alias">ExtendProgramParams</a><a href="#decodeextendprogram-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode an extend program instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/ExtendProgramParams.html" class="tsd-signature-type tsd-kind-type-alias">ExtendProgramParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L400">packages/web3.js/src/programs/loader-v3.ts:400</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodeinitializebuffer"><code class="tsd-tag">Static</code><span>decode<wbr/>Initialize<wbr/>Buffer</span><a href="#decodeinitializebuffer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodeinitializebuffer-1"><span class="tsd-kind-call-signature">decodeInitializeBuffer</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/InitializeBufferParams.html" class="tsd-signature-type tsd-kind-type-alias">InitializeBufferParams</a><a href="#decodeinitializebuffer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode an initialize buffer instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/InitializeBufferParams.html" class="tsd-signature-type tsd-kind-type-alias">InitializeBufferParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L207">packages/web3.js/src/programs/loader-v3.ts:207</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodeinstructiontype"><code class="tsd-tag">Static</code><span>decode<wbr/>Instruction<wbr/>Type</span><a href="#decodeinstructiontype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodeinstructiontype-1"><span class="tsd-kind-call-signature">decodeInstructionType</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/LoaderV3InstructionType.html" class="tsd-signature-type tsd-kind-type-alias">LoaderV3InstructionType</a><a href="#decodeinstructiontype-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode a loader v3 instruction and retrieve the instruction type.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/LoaderV3InstructionType.html" class="tsd-signature-type tsd-kind-type-alias">LoaderV3InstructionType</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L198">packages/web3.js/src/programs/loader-v3.ts:198</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodesetauthority"><code class="tsd-tag">Static</code><span>decode<wbr/>Set<wbr/>Authority</span><a href="#decodesetauthority" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodesetauthority-1"><span class="tsd-kind-call-signature">decodeSetAuthority</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/SetAuthorityParams.html" class="tsd-signature-type tsd-kind-type-alias">SetAuthorityParams</a><a href="#decodesetauthority-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode a set authority instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/SetAuthorityParams.html" class="tsd-signature-type tsd-kind-type-alias">SetAuthorityParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L315">packages/web3.js/src/programs/loader-v3.ts:315</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodesetauthoritychecked"><code class="tsd-tag">Static</code><span>decode<wbr/>Set<wbr/>Authority<wbr/>Checked</span><a href="#decodesetauthoritychecked" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodesetauthoritychecked-1"><span class="tsd-kind-call-signature">decodeSetAuthorityChecked</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/SetAuthorityCheckedParams.html" class="tsd-signature-type tsd-kind-type-alias">SetAuthorityCheckedParams</a><a href="#decodesetauthoritychecked-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode a set authority checked instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/SetAuthorityCheckedParams.html" class="tsd-signature-type tsd-kind-type-alias">SetAuthorityCheckedParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L343">packages/web3.js/src/programs/loader-v3.ts:343</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodeupgrade"><code class="tsd-tag">Static</code><span>decode<wbr/>Upgrade</span><a href="#decodeupgrade" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodeupgrade-1"><span class="tsd-kind-call-signature">decodeUpgrade</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/UpgradeParams.html" class="tsd-signature-type tsd-kind-type-alias">UpgradeParams</a><a href="#decodeupgrade-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode an upgrade instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/UpgradeParams.html" class="tsd-signature-type tsd-kind-type-alias">UpgradeParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L285">packages/web3.js/src/programs/loader-v3.ts:285</a></li></ul></aside></div></li></ul></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="decodewrite"><code class="tsd-tag">Static</code><span>decode<wbr/>Write</span><a href="#decodewrite" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="">
+<div class="tsd-signature tsd-anchor-link" id="decodewrite-1"><span class="tsd-kind-call-signature">decodeWrite</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">instruction</span><span class="tsd-signature-symbol">:</span> <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="../types/WriteParams.html" class="tsd-signature-type tsd-kind-type-alias">WriteParams</a><a href="#decodewrite-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
+<div class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Decode a write instruction and retrieve the instruction params.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li><span><span class="tsd-kind-parameter">instruction</span>: <a href="TransactionInstruction.html" class="tsd-signature-type tsd-kind-class">TransactionInstruction</a></span></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/WriteParams.html" class="tsd-signature-type tsd-kind-type-alias">WriteParams</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/solana-foundation/solana-web3.js/blob/de9b95996150776d928fc77587059226bf6b9db6/packages/web3.js/src/programs/loader-v3.ts#L228">packages/web3.js/src/programs/loader-v3.ts:228</a></li></ul></aside></div></li></ul></section></section></details></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
+<div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Methods</summary>
+<div><a href="#decodeclose"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Close</span></a><a href="#decodedeploywithmaxdatalen"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Deploy<wbr/>With<wbr/>Max<wbr/>Data<wbr/>Len</span></a><a href="#decodeextendprogram"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Extend<wbr/>Program</span></a><a href="#decodeinitializebuffer"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Initialize<wbr/>Buffer</span></a><a href="#decodeinstructiontype"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Instruction<wbr/>Type</span></a><a href="#decodesetauthority"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Set<wbr/>Authority</span></a><a href="#decodesetauthoritychecked"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Set<wbr/>Authority<wbr/>Checked</span></a><a href="#decodeupgrade"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Upgrade</span></a><a href="#decodewrite"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>decode<wbr/>Write</span></a></div></details></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="../modules.html">@solana/web3.js</a>
+<ul class="tsd-small-nested-navigation" id="tsd-nav-container">
+<li>Loading...</li></ul></nav></div></div></div><footer>
+<p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer>
+<div class="overlay"></div></body></html>

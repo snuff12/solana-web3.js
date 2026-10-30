@@ -1385,15 +1385,26 @@ export type ParsedTransactionWithMeta = TransactionResponseBase &
     }
   >;
 
-type BlockResponseTransactionMeta = NonNullable<
-  TransactionForFullJson<void>['meta']
+type NullableBlockArrayFields<TMeta, TField extends keyof TMeta> = {
+  [TKey in TField]?: TMeta[TKey] | null;
+};
+
+type BlockResponseTransactionMeta = Overwrite<
+  NonNullable<TransactionForFullJson<void>['meta']>,
+  NullableBlockArrayFields<
+    NonNullable<TransactionForFullJson<void>['meta']>,
+    'innerInstructions' | 'postTokenBalances' | 'preTokenBalances'
+  >
 > & {
   costUnits?: bigint;
 };
 
 type ParsedBlockResponseTransactionMeta = Overwrite<
   NonNullable<TransactionForFullJsonParsed<0 | 1>['meta']>,
-  {
+  NullableBlockArrayFields<
+    NonNullable<TransactionForFullJsonParsed<0 | 1>['meta']>,
+    'postTokenBalances' | 'preTokenBalances'
+  > & {
     innerInstructions?: ParsedInnerInstruction[] | null;
     loadedAddresses?: LoadedAddresses;
   }
@@ -1401,22 +1412,32 @@ type ParsedBlockResponseTransactionMeta = Overwrite<
   costUnits?: bigint;
 };
 
-type AccountsModeBlockResponseTransactionMeta = NonNullable<
-  TransactionForAccounts<0 | 1>['meta']
+type AccountsModeBlockResponseTransactionMeta = Overwrite<
+  NonNullable<TransactionForAccounts<0 | 1>['meta']>,
+  NullableBlockArrayFields<
+    NonNullable<TransactionForAccounts<0 | 1>['meta']>,
+    'postTokenBalances' | 'preTokenBalances'
+  >
 > & {
   costUnits?: bigint;
 };
 
 type VersionedBlockResponseTransactionMeta = Overwrite<
   NonNullable<TransactionForFullJson<0 | 1>['meta']>,
-  {
+  NullableBlockArrayFields<
+    NonNullable<TransactionForFullJson<0 | 1>['meta']>,
+    'innerInstructions' | 'postTokenBalances' | 'preTokenBalances'
+  > & {
     loadedAddresses?: LoadedAddresses;
   }
 > & {
   costUnits?: bigint;
 };
 
-type NormalizedBlockSubscriptionMetaFields = {
+type NormalizedBlockSubscriptionMetaFields = NullableBlockArrayFields<
+  NonNullable<TransactionForAccounts<0 | 1>['meta']>,
+  'postTokenBalances' | 'preTokenBalances'
+> & {
   computeUnitsConsumed?: bigint;
   fee: bigint;
   postBalances: Array<bigint>;
@@ -1436,14 +1457,22 @@ type OptionalBlockSubscriptionLoadedAddresses = {
 type BlockSubscriptionTransactionMeta = Overwrite<
   NonNullable<TransactionForFullJson<0 | 1>['meta']>,
   NormalizedBlockSubscriptionMetaFields &
-    OptionalBlockSubscriptionLoadedAddresses
+    OptionalBlockSubscriptionLoadedAddresses &
+    NullableBlockArrayFields<
+      NonNullable<TransactionForFullJson<0 | 1>['meta']>,
+      'innerInstructions'
+    >
 > &
   BlockSubscriptionMetaWithCostUnits;
 
 type BlockSubscriptionParsedTransactionMeta = Overwrite<
   NonNullable<TransactionForFullJsonParsed<0 | 1>['meta']>,
   NormalizedBlockSubscriptionMetaFields &
-    OptionalBlockSubscriptionLoadedAddresses
+    OptionalBlockSubscriptionLoadedAddresses &
+    NullableBlockArrayFields<
+      NonNullable<TransactionForFullJsonParsed<0 | 1>['meta']>,
+      'innerInstructions'
+    >
 > &
   BlockSubscriptionMetaWithCostUnits;
 
